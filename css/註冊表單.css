@@ -3,6 +3,7 @@
     padding: 0;
     font-family: "Microsoft Jhenghei";
 }
+/* Global **********************************************************/
 nav{
     width: 100%;
     height: 20px;
@@ -29,7 +30,7 @@ nav p {
 .container{
     margin-top: 220px;
 }
-button{
+.submit{
     background-color: #008cd6;
     display: block;
     width:120px;
@@ -57,15 +58,37 @@ small{
 .right{
     margin-left: 0px;
     color: black;
+    background-color: #ffffff;
+    border: none;
     text-decoration: underline;
 }
 .right:hover{
     color: black;
     text-decoration: underline;
 }
-/* form Done *******************************************************/
+/* Form Done ******************************************************/
+.modal-header{
+    background-color: #008cd6;
+    color: white;
+    padding: 10px;
+}
+.modal-fade{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.modal{
+    margin-top: 229.25px;
+}
+.close{
+    color: white;
+}
+/* Modal Done ******************************************************/
 footer{
     background-color: #008cd6;
     margin-top: 50px;  
     font-weight: 900;
 }
+/* form Done *******************************************************/
