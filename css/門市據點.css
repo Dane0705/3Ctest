@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: "Microsoft Jhenghei";
+    box-sizing: border-box;
 }
 .logo img{
     width: 300px;
@@ -43,12 +44,13 @@
     color: black;
     text-decoration: none;
 }
-
-.list{
-    height: 500px;
-}
-.list-header{
+#list-header{
     position: relative;
+    margin: 0px;
+}
+#list-header::after{
+    content: "";
+    clear: both;
 }
 .list-tab{
     position: absolute;
@@ -71,12 +73,41 @@
     left: 100px;
     border-radius: 15px 15px 0px 0px;
 }
+.tabBack{
+    background-color: #3963ae;
+    color: white;
+    z-index: 1;
+    box-shadow: rgba(0, 0, 0, 0.5) 2px 1px 5px;
+    font-weight: 900;
+    padding: 10px;
+    margin: 0;
+    left: 100px;
+    border-radius: 15px 15px 0px 0px;
+}
+.tabFirst{
+    background-color: #eae9e9;
+    color: #3963ae;
+    z-index: 0;
+    font-weight: 900;
+    padding: 10px;
+    margin: 0;
+    border-radius: 15px 15px 0px 0px;
+}
+/* Tab Done **********************************************/
+.selectBar{
+    width: 48%;
+    border-radius: 5px;
+    font-weight: 700;
+    background-color: #fff;
+}
+/* SelectBar Done ****************************************/
 .list-body{
     z-index: 1;
-    margin-top: 28px;
+    margin-top: 0px;
     background-color: #3963ae;
     position: absolute;
-    width: 365px;
+    /* width: 99%; */
+    width: 100%;
     border-radius: 0px 5px 5px 5px ;
     box-shadow: rgba(0, 0, 0, 0.5) 2px 4px 5px;
 }
@@ -84,22 +115,20 @@
     font-size: 16px;
     font-weight: 900;
 }
-.list-left{
-    width: 280px;
+.list-right{
+    margin-left: auto;
 }
 .list-box{
     background-color: #fff;
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.5) 2px 4px 5px;
+    width: 100%;
 }
 .fa-mobile-alt{
     /* margin-left:20px; */
     padding-left: 1px;
 }
-.page{
-    margin-left: 90px;
-}
-/* modal ***********************************************************/
+/* listBody Done ***********************************************************/
 .modal-backdrop{
     position: absolute;
     z-index:-1;
@@ -112,9 +141,12 @@
 .modal-body{
     padding: 5px;
 }
-/* form Done *******************************************************/
+.modal-backdrop{
+    height: 300000000px;
+}
+/* modal Done *******************************************************/
 footer{
-    margin-top: 850px;
+    margin-top: 180px;
     background-color: #173072;
     width: 100%;
     font-weight: 900;
